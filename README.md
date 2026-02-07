@@ -79,7 +79,7 @@ The report documents the results, visualizations, and observations for each step
 
 *Observations (DoG Filtering):*
 - **Spatial Domain:** The DoG filter acts as an edge detector, enhancing brick edges in the high-frequency image while creating outline effects in the portrait. Note the derivative operation produces negative values, shown here as absolute values.
-- **Frequency Domain:** DoG filtering creates a band-pass characteristic—attenuating both very low frequencies (smooth regions) and very high frequencies (noise), while preserving medium frequencies corresponding to edges. This is visible as a "donut" pattern in the frequency domain.
+- **Frequency Domain:** DoG filtering creates a band-pass characteristic attenuating both very low frequencies (smooth regions) and very high frequencies (noise), while preserving medium frequencies corresponding to edges. This is visible as a "donut" pattern in the frequency domain.
 
 
 ## 4: Anti-aliasing
@@ -147,7 +147,7 @@ The report documents the results, visualizations, and observations for each step
 
 - **Frequency Domain Comparison:** Anti-aliased versions show clean frequency spectra with energy properly confined within Nyquist boundaries. No folding artifacts are present, demonstrating proper bandlimiting before sampling.
 
-- **Trade-off:** Anti-aliasing introduces controlled blurring to prevent aliasing—a necessary compromise. The optimal σ values balance detail preservation against alias prevention.
+- **Trade-off:** Anti-aliasing introduces controlled blurring to prevent aliasing a necessary compromise. The optimal σ values balance detail preservation against alias prevention.
 
 
 ## 5: Canny Edge Detection Thresholding
@@ -211,4 +211,4 @@ This project successfully demonstrates fundamental image processing concepts thr
 
 5. **Practical Implementation:** The project bridges theoretical concepts (Nyquist theorem, Fourier analysis) with practical implementation challenges (parameter tuning, visual assessment).
 
-The complete workflow—from image acquisition through filtering, frequency analysis, anti-aliasing, and edge detection—provides a comprehensive foundation for more advanced computer vision and image processing applications.
+The complete workflow from image acquisition through filtering, frequency analysis, anti-aliasing, and edge detection provides a comprehensive foundation for more advanced computer vision and image processing applications.
